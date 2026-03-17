@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal website for John Van." />
+    <title>John Van</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Home">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span class="brand-text">John Van</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#projects">Projects</a>
+          <a href="#contact">Links</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-left">
+            <p class="eyebrow">Hi, I’m</p>
+            <h1 class="title">John Van</h1>
+            <p class="subtitle">
+              Short description goes here. Add a sentence about what you do, what
+              you’re looking for, and your core strengths.
+            </p>
+
+            <div class="cta-row" id="contact">
+              <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noopener">
+                Resume
+              </a>
+              <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+              <a class="btn" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">
+                GitHub
+              </a>
+            </div>
+
+            <p class="note">
+              Tip: replace <span class="mono">assets/profile.jpg</span> and
+              <span class="mono">assets/resume.pdf</span> with your real files.
+            </p>
+          </div>
+
+          <div class="hero-right">
+            <div class="avatar-wrap">
+              <img
+                class="avatar"
+                src="assets/profile.jpg"
+                alt="Portrait of John Van"
+                width="240"
+                height="240"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" id="projects-title">Projects</h2>
+            <p class="section-subtitle">
+              Add your best work here. Keep entries short and link out to demos/repos.
+            </p>
+          </div>
+
+          <div class="grid" role="list">
+            <article class="card" role="listitem">
+              <div class="card-top">
+                <h3 class="card-title">Project One</h3>
+                <p class="card-desc">
+                  One-line description of what it is and why it’s cool.
+                </p>
+              </div>
+              <div class="tags" aria-label="Tech stack">
+                <span class="tag">Tech</span>
+                <span class="tag">Tech</span>
+                <span class="tag">Tech</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://example.com" target="_blank" rel="noopener">Live</a>
+                <a class="link" href="https://github.com/YOUR_GITHUB/YOUR_REPO" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+
+            <article class="card" role="listitem">
+              <div class="card-top">
+                <h3 class="card-title">Project Two</h3>
+                <p class="card-desc">Another short description.</p>
+              </div>
+              <div class="tags" aria-label="Tech stack">
+                <span class="tag">Tech</span>
+                <span class="tag">Tech</span>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="https://github.com/YOUR_GITHUB/YOUR_REPO" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+
+            <article class="card muted" role="listitem">
+              <div class="card-top">
+                <h3 class="card-title">Add more</h3>
+                <p class="card-desc">
+                  Copy a card and update: title, description, tags, and links.
+                </p>
+              </div>
+              <div class="card-actions">
+                <a class="link" href="#projects">Editing tip</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-text">
+          © <span id="year"></span> John Van. Built for GitHub Pages.
+        </p>
+        <a class="back-to-top" href="#top" aria-label="Back to top">Top</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
